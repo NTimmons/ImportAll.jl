@@ -1,6 +1,6 @@
 module ImportAll
 
-export importall
+
     macro importall(name, verbose=false)
         for name in names(Base)
             eval(quote
@@ -11,4 +11,6 @@ export importall
             end
         end
     end
+	
+	export importall
 end
