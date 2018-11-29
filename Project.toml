@@ -1,0 +1,6 @@
+authors = ["Nicholas Timmons <ngtimmons@gmail.com>"]
+name = "ImportAll"
+uuid = "308f958e-f3fa-11e8-2a60-23f85d5512fd"
+version = "0.1.0"
+
+[deps]
