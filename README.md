@@ -1,6 +1,7 @@
 # ImportAll.jl
 
-[![Build Status](https://travis-ci.org/NTimmons/ImportAll.jl.svg?branch=master)](https://travis-ci.org/NTimmons/ImportAll.jl)[![codecov](https://codecov.io/gh/NTimmons/ImportAll.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/NTimmons/ImportAll.jl)
+[![Build Status](https://travis-ci.org/NTimmons/ImportAll.js.svg?branch=master)](https://travis-ci.org/NTimmons/ImportAll.js)
+[![codecov](https://codecov.io/gh/NTimmons/ImportAll.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/NTimmons/ImportAll.jl)
 
 ImportAll.jl is a package which give you the @importall macro to replace the importall command which was depreciated.
 
