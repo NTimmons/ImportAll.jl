@@ -1,16 +1,16 @@
 module ImportAll
 
 macro importall(moduleIn, verbose=false)
-    modName = @eval($(moduleIn))
-    out = []
-    for name in names(modName)
-            symbolname = @eval $(name)
-            expression = :(import $(moduleIn): $(name))
-            push!(out, expression)
+    quote
+        try
+            $(esc(moduleIn))
+        catch
+            import $(moduleIn)
+        end
+        for name in names($(esc(moduleIn)))
+            @eval import .$(moduleIn): $(Expr(:$, :name))
+        end
     end
-	
-    ret = Expr(:block,out...)
-	return ret
 end
 
 export @importall
